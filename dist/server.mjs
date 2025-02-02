@@ -11,8 +11,7 @@ import "./chunk-6WLVXSUQ.mjs";
 
 // src/server.ts
 try {
-  app_default.listen({ port: Number(process.env.PORT) || 4e3 });
-  console.log(`Server is running on http://localhost:${process.env.PORT}`);
+  app_default.listen({ port: 4e3 });
 } catch (error) {
   console.error("Error starting the server:", error);
   process.exit(1);
