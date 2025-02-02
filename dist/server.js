@@ -505,7 +505,7 @@ var app_default = app;
 
 // src/server.ts
 try {
-  app_default.listen({ port: Number(process.env.PORT) });
+  app_default.listen({ port: Number(process.env.PORT) || 4e3 });
   console.log(`Server is running on http://localhost:${process.env.PORT}`);
 } catch (error) {
   console.error("Error starting the server:", error);
