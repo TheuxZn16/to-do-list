@@ -12,7 +12,10 @@ import "./chunk-6WLVXSUQ.mjs";
 // src/server.ts
 var PORT = Number(process.env.PORT);
 try {
-  app_default.listen({ port: PORT || 4e3 });
+  app_default.listen({
+    host: "0.0.0.0",
+    port: PORT || 4e3
+  });
 } catch (error) {
   console.error("Error starting the server:", error);
   process.exit(1);
